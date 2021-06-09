@@ -1,0 +1,28 @@
+html{
+    
+    font-size: 14px;
+}
+h1{
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    font-size:5rem;
+}
+ul {
+    list-style-type: none;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin: 0;
+    border-bottom: 2px solid beige;
+    background-color: brown;
+  }
+  li {
+    display: inline;
+    margin: 5rem;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  li:hover{
+      color: bisque;
+  }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="flex-container">
+            <img src="https://picsum.photos/100" id='item-1' alt='loading,wait!' />
+            <div id="item-2">
+                <strong>Vikas</strong>
+                <p><i>Beautiful picture taken by a professional</i></p>
+            </div>
+            <button id="item-3">X</button>
+        </div>
+
+        <div class="flex-container">
+            <img src="https://picsum.photos/100" id='item-1' alt='loading,wait!' />
+            <div id="item-2">
+                <strong>Vikas</strong>
+                <p><i>Beautiful picture taken by a professional</i></p>
+            </div>
+            <button id="item-3">X</button>
+        </div>
+
+        <div class="flex-container">
+            <img src="https://picsum.photos/100" id='item-1' alt='loading,wait!' />
+            <div id="item-2">
+                <strong>Vikas</strong>
+                <p><i>Beautiful picture taken by a professional</i></p>
+            </div>
+            <button id="item-3">X</button>
+        </div>
+
+        <div class="flex-container">
+            <img src="https://picsum.photos/100" id='item-1' alt='loading,wait!' />
+            <div id="item-2">
+                <strong>Vikas</strong>
+                <p><i>Beautiful picture taken by a professional</i></p>
+            </div>
+            <button id="item-3">X</button>
+        </div>
+
+        <div class="flex-container">
+            <img src="https://picsum.photos/100" id='item-1' alt='loading,wait!' />
+            <div id="item-2">
+                <strong>Vikas</strong>
+                <p><i>Beautiful picture taken by a professional</i></p>
+            </div>
+            <button id="item-3">X</button>
+        </div>
+        <div class="flex-container">
+            <img src="https://picsum.photos/100" id='item-1' alt='loading,wait!' />
+            <div id="item-2">
+                <strong>Vikas</strong>
+                <p><i>Beautiful picture taken by a professional</i></p>
+            </div>
+            <button id="item-3">X</button>
+        </div>
+</body>
+<style>
+    .flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .flex-container {
+        min-width: 300px;
+        background-color: bisque;
+        display: flex;
+        margin: 10px;
+        flex-direction: row;
+        border-radius: 10px;
+    }
+
+    #item-1 {
+        border-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        align-items: flex-start;
+    }
+
+    #item-2 {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    #item-2 strong {
+        display: inline;
+    }
+
+    #item-2 p {
+        display: inline;
+        align-self: start;
+        flex-grow: 2;
+    }
+
+    #item-3 {
+        height: 10px;
+        background-color: none;
+        font-size: 1rem;
+        border: none;
+    }
+</style>
+
+</html>

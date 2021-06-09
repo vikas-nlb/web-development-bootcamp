@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <h1> Promise</h1>
+</body>
+<script>
+    var promise = new Promise((resolve1,reject) =>{
+        a=1;
+        if(a==2){
+            resolve('Perfect')
+        }else{
+            reject('Go to primary school')
+        }
+    })
+
+    promise.then((message)=>{
+        alert(message)
+    }).catch((message) =>{
+        alert(message)
+    })
+</script>
+</html>

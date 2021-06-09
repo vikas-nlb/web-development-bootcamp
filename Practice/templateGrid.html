@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Grid</title>
+</head>
+<style>
+    .grid-item:nth-child(even) {
+        background-color: peru;
+    }
+
+    .grid-item:nth-child(odd) {
+        background-color: peachpuff;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-auto-rows: minmax(150px, auto);
+        grid-gap: 2px;
+        grid-template-areas: "header header header"
+            "side main main"
+            "side main main"
+            "footer footer footer";
+    }
+
+    #item-1 {
+        grid-area: header;
+    }
+
+    #item-2 {
+        grid-area: side;
+    }
+
+    #item-3 {
+        grid-area: main;
+    }
+
+    #item-4 {
+        grid-area: footer;
+    }
+
+    @media (max-width:360px) {
+        .grid-container {
+            grid-template-areas: "header header header"
+                "side side side"
+                "main main main"
+                "footer footer footer";
+        }
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item" id="item-1">Header</div>
+        <div class="grid-item" id="item-2">Side</div>
+        <div class="grid-item" id="item-3">Main</div>
+        <div class="grid-item" id="item-4">Footer</div>
+    </div>
+</body>
+
+</html>
